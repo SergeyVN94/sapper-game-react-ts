@@ -22,8 +22,8 @@ export const mapPosNearbyCells = [
 ];
 
 export const makeField = (width: number, height: number) => {
-  const field = Array(width).fill([]).map((_, rowI) => {
-    const row: Cell[] = Array(height).fill({}).map((_, cellI) => {
+  const field = Array(height).fill([]).map((_, rowI) => {
+    const row: Cell[] = Array(width).fill({}).map((_, cellI) => {
       const randNum = Math.floor(Math.random() * 1000);
 
       return ({
