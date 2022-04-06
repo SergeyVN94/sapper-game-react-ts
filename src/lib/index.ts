@@ -32,6 +32,7 @@ export const makeField = (width: number, height: number) => {
         withBomb: randNum < 300 && randNum > 200,
         open: false,
         bombsNearby: 0,
+        flag: false,
       });
     });
 
