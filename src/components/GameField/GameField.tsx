@@ -1,6 +1,8 @@
 import React from 'react'
 
-import { Cell, Field } from './types';
+import { Cell, Field } from '../../types';
+
+import './game-field.css';
 
 const FieldCell: React.FC<{ cell: Cell, onClick: () => void }> = ({ cell, onClick }) => {
   const classes = [

@@ -1,9 +1,9 @@
 import React, { useState, useCallback } from 'react';
 import './App.css';
 
-import { Cell, Field } from './types';
-import { makeField, openNearbyEmptyCell, FieldSizeInit } from './lib';
-import GameField from './GameField';
+import { Cell, Field } from '../../types';
+import { makeField, openNearbyEmptyCell, FieldSizeInit } from '../../lib';
+import GameField from '../GameField/GameField';
 
 function App() {
   const [fieldSize] = useState(FieldSizeInit);
@@ -29,7 +29,7 @@ function App() {
 
     if (!openedCell) return;
 
-    if (openedCell.bombsNearby === 0 || !openedCell.withBomb) openNearbyEmptyCell(openedCell, newField);
+    if (openedCell.bombsNearby === 0 && !openedCell.withBomb) openNearbyEmptyCell(openedCell, newField);
     setField(newField);
   };
 

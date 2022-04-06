@@ -1,4 +1,4 @@
-import { Cell, Field } from './types';
+import { Cell, Field } from '../types';
 
 export const findSell = (x: number, y: number, field: Field): Cell | null => {
   if (x < 0 || x >= field[0].length) return null;

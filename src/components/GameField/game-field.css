@@ -1,29 +1,3 @@
-.App {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 20px;
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-.btn {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  background-color: cornflowerblue;
-  color: aliceblue;
-  border-radius: 4px;
-  padding: 0.5em 0.7em;
-  font-size: 14px;
-  cursor: pointer;
-}
-
-.btn:active {
-  background-color: darkslateblue;
-}
-
 .field {
   margin-bottom: 10px;
   border: 2px solid darkorange;
