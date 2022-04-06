@@ -16,7 +16,7 @@ function App() {
     if (gameState === 'running') return;
 
     setTimeout(() => {
-      window.confirm(gameState === 'gameOver' ? 'Game Over!' : 'You win!');
+      alert(gameState === 'gameOver' ? 'Game Over!' : 'You win!');
       resetGame();
       setGameState('running');
     }, 50);
